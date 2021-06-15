@@ -1,0 +1,58 @@
+Account Management Module
+
+
+Asp.net core web api project name -> AccountManagementApi
+
+Database name -> AccountManagementModuleDB
+
+
+Tables
+
+	1. Account
+
+		columns
+			- AccountID - int - (primaryKey)
+			- CustomerID - int
+			- AccountBalance - Double
+			- AccountType - string
+	2. AccountCreationStatus
+
+		columns
+			- MessageID - int - (Primary Key)
+			- AccountID - int- (Foreign key)
+			- Message - string
+
+
+	3. Statement
+
+		columns
+			- StatementID - int - (primary key)
+			- AccountID - int - (Foreign Key)
+			- Date - DateTime 
+			- Narration - string
+			- ChqOrReferenceNumber - string 
+			- WithdrawalOrDeposit - string
+			- ClosingBalance - Double
+
+	4. TransactionStatus
+
+		columns
+			- TransactionStatusID - int - (primary key)
+			- Message - string 
+			- SourceBalance - string 
+			- DestinationBalance - string
+
+
+AccountManagementModule api actions:
+
+POST: /createAccount (Input: CustomerId) | Output: AccountCreationStatus
+
+GET: /getCustomerAccounts (Input:CustomerId | Output: Array of Account(id, Balance)
+
+GET: /getAccount(Input:AccountId | Output: Account(id, balance) 
+
+GET:/getAccountStatement(Input: AccountId, from_date, to_date | Output: Statement
+
+POST:/deposit(Input: AccountId, amount | Output: TransactionStatus)
+
+POST:/withdraw(Input: AccountId, amount | Output: TransactionStatus)

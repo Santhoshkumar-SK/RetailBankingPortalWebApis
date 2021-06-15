@@ -1,0 +1,321 @@
+INFO  07:19:56 Application started. Press Ctrl+C to shut down.
+INFO  07:19:56 Hosting environment: Development
+INFO  07:19:56 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:20:56 Application started. Press Ctrl+C to shut down.
+INFO  07:20:56 Hosting environment: Development
+INFO  07:20:56 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+ERROR 07:21:22 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AuthenticationService.Repository.IAuthenticationRepo' while attempting to activate 'AuthenticationService.Controllers.AuthenticationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:26:31 Application started. Press Ctrl+C to shut down.
+INFO  07:26:31 Hosting environment: Development
+INFO  07:26:31 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:26:45 Generating Token Started..
+ERROR 07:26:45 An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at AuthenticationService.Repository.AuthenticationRepo.GenerateJSONWebToken(UserDTO userInfo) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Repository\AuthenticationRepo.cs:line 48
+   at AuthenticationService.Controllers.AuthenticationController.Login(UserDTO user) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Controllers\AuthenticationController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:30:43 Application started. Press Ctrl+C to shut down.
+INFO  07:30:43 Hosting environment: Development
+INFO  07:30:43 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:30:59 Generating Token Started..
+ERROR 07:31:12 An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at AuthenticationService.Repository.AuthenticationRepo.GenerateJSONWebToken(UserDTO userInfo) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Repository\AuthenticationRepo.cs:line 48
+   at AuthenticationService.Controllers.AuthenticationController.Login(UserDTO user) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Controllers\AuthenticationController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:37:17 Application started. Press Ctrl+C to shut down.
+INFO  07:37:17 Hosting environment: Development
+INFO  07:37:17 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:37:37 Generating Token Started..
+ERROR 07:37:41 An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at AuthenticationService.Repository.AuthenticationRepo.GenerateJSONWebToken(UserDTO userInfo) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Repository\AuthenticationRepo.cs:line 48
+   at AuthenticationService.Controllers.AuthenticationController.Login(UserDTO user) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Controllers\AuthenticationController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:38:49 Application started. Press Ctrl+C to shut down.
+INFO  07:38:49 Hosting environment: Development
+INFO  07:38:49 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:38:59 Generating Token Started..
+ERROR 07:39:07 An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at AuthenticationService.Repository.AuthenticationRepo.GenerateJSONWebToken(UserDTO userInfo) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Repository\AuthenticationRepo.cs:line 48
+   at AuthenticationService.Controllers.AuthenticationController.Login(UserDTO user) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Controllers\AuthenticationController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:40:45 Application started. Press Ctrl+C to shut down.
+INFO  07:40:45 Hosting environment: Development
+INFO  07:40:45 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:41:00 Generating Token Started..
+INFO  07:41:00 BankPortal@2021
+ERROR 07:41:00 An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at AuthenticationService.Repository.AuthenticationRepo.GenerateJSONWebToken(UserDTO userInfo) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Repository\AuthenticationRepo.cs:line 48
+   at AuthenticationService.Controllers.AuthenticationController.Login(UserDTO user) in F:\cts\Hands on\Dot Net\Final Project\AuthenticationService\Controllers\AuthenticationController.cs:line 35
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  07:42:07 Application started. Press Ctrl+C to shut down.
+INFO  07:42:07 Hosting environment: Development
+INFO  07:42:07 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:42:18 Generating Token Started..
+INFO  07:42:18 EtailorTrackerprod@2021
+INFO  07:42:49 Application started. Press Ctrl+C to shut down.
+INFO  07:42:49 Hosting environment: Development
+INFO  07:42:49 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:43:00 Generating Token Started..
+INFO  07:43:00 RetailBankingPortal@2021
+INFO  07:45:54 Application started. Press Ctrl+C to shut down.
+INFO  07:45:54 Hosting environment: Development
+INFO  07:45:54 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:46:12 Generating Token Started..
+INFO  07:47:21 Application started. Press Ctrl+C to shut down.
+INFO  07:47:21 Hosting environment: Development
+INFO  07:47:21 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  07:47:41 Generating Token Started..
+INFO  08:02:44 Application started. Press Ctrl+C to shut down.
+INFO  08:02:44 Hosting environment: Development
+INFO  08:02:44 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+ERROR 08:03:01 Failed executing DbCommand (393ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Authentication] ([UserId], [PasswordHash], [PasswordSalt], [Role])
+VALUES (@p0, @p1, @p2, @p3);
+ERROR 08:03:01 An exception occurred in the database while saving changes for context type 'AuthenticationService.Data.AuthenticationContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Authentication' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:343c8c63-ac0d-46f9-8d85-655259bb0430
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Authentication' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:343c8c63-ac0d-46f9-8d85-655259bb0430
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+INFO  08:03:01 An error occurred while updating the entries. See the inner exception for details.
+INFO  08:03:23 User Validated Successfully
+INFO  08:03:23 Generating Token Started..
+INFO  08:04:52 Application started. Press Ctrl+C to shut down.
+INFO  08:04:52 Hosting environment: Development
+INFO  08:04:52 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  08:10:54 Application started. Press Ctrl+C to shut down.
+INFO  08:10:54 Hosting environment: Development
+INFO  08:10:54 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  08:12:32 Application started. Press Ctrl+C to shut down.
+INFO  08:12:32 Hosting environment: Development
+INFO  08:12:32 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  08:16:20 Application started. Press Ctrl+C to shut down.
+INFO  08:16:20 Hosting environment: Development
+INFO  08:16:20 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  08:19:23 Application started. Press Ctrl+C to shut down.
+INFO  08:19:23 Hosting environment: Development
+INFO  08:19:23 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  08:19:40 User Validated Successfully
+INFO  08:19:40 Generating Token Started..
+INFO  08:49:10 Application started. Press Ctrl+C to shut down.
+INFO  08:49:10 Hosting environment: Development
+INFO  08:49:10 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  09:14:25 Application started. Press Ctrl+C to shut down.
+INFO  09:14:25 Hosting environment: Development
+INFO  09:14:25 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  09:15:53 User Validated Successfully
+INFO  09:15:53 Generating Token Started..
+INFO  09:44:50 Application started. Press Ctrl+C to shut down.
+INFO  09:44:50 Hosting environment: Development
+INFO  09:44:50 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  10:12:27 Application started. Press Ctrl+C to shut down.
+INFO  10:12:27 Hosting environment: Development
+INFO  10:12:27 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  10:13:44 User Validated Successfully
+INFO  10:13:44 Generating Token Started..
+INFO  10:17:28 Application started. Press Ctrl+C to shut down.
+INFO  10:17:28 Hosting environment: Development
+INFO  10:17:28 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  10:17:56 Generating Token Started..
+INFO  10:48:29 Application started. Press Ctrl+C to shut down.
+INFO  10:48:29 Hosting environment: Development
+INFO  10:48:29 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  10:49:18 User Validated Successfully
+INFO  10:49:18 Generating Token Started..
+INFO  09:28:58 Application started. Press Ctrl+C to shut down.
+INFO  09:28:58 Hosting environment: Development
+INFO  09:28:58 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  06:24:21 Application started. Press Ctrl+C to shut down.
+INFO  06:24:21 Hosting environment: Development
+INFO  06:24:21 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  06:25:28 Generating Token Started..
+INFO  06:27:40 Application started. Press Ctrl+C to shut down.
+INFO  06:27:40 Hosting environment: Development
+INFO  06:27:40 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  09:09:35 Application started. Press Ctrl+C to shut down.
+INFO  09:09:35 Hosting environment: Development
+INFO  09:09:35 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  09:10:53 Generating Token Started..
+INFO  10:04:35 User Validated Successfully
+INFO  10:04:35 Generating Token Started..
+INFO  10:24:01 Application started. Press Ctrl+C to shut down.
+INFO  10:24:01 Hosting environment: Development
+INFO  10:24:01 Content root path: F:\cts\Hands on\Dot Net\Final Project\AuthenticationService
+INFO  10:24:32 Generating Token Started..
+INFO  10:25:53 Invalid Password
+INFO  10:26:11 Invalid Password
+INFO  10:26:58 User Validated Successfully
+INFO  10:26:58 Generating Token Started..

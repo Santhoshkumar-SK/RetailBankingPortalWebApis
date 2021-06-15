@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AccountManagementApi.Models
+{
+    public class AccountDetailsForSending
+    {
+
+        public int AccountId { get; set; }
+
+        public Double AccountBalance { get; set; }
+    }
+}

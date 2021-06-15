@@ -1,0 +1,145 @@
+INFO  11:17:34 Creation of customer is initiated
+INFO  11:17:35 Customer Created Successfully
+ERROR 11:17:40 Exception OccuredSystem.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it. (localhost:44377))
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:44377)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CustomerApi.Services.CustomerService.createAccountResponse(Int32 customerId, String accountType) in F:\cts\Hands on\Dot Net\Final Project\CustomerApi\Services\CustomerService.cs:line 37
+INFO  11:18:43 Creation of customer is initiated
+INFO  11:18:44 Customer Created Successfully
+INFO  11:20:21 Creation of customer is initiated
+INFO  11:20:22 Customer Created Successfully
+INFO  11:20:22 https://localhost:44377/
+INFO  11:21:07 Creation of customer is initiated
+INFO  11:21:09 Customer Created Successfully
+INFO  11:21:09 https://localhost:44377/
+INFO  01:05:39 Creation of customer is initiated
+INFO  01:05:41 Customer Created Successfully
+INFO  01:05:41 https://localhost:44377//api/AccountManagement/CreateAccount/
+INFO  01:08:17 Creation of customer is initiated
+INFO  01:08:18 Customer Created Successfully
+INFO  01:08:19 https://localhost:44377//api/AccountManagement/CreateAccount/
+INFO  01:09:25 Creation of customer is initiated
+INFO  01:09:26 Customer Created Successfully
+INFO  01:09:26 https://localhost:44377//api/AccountManagement/CreateAccount/
+INFO  01:09:27 StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 07:39:27 GMT
+}
+INFO  01:12:53 Creation of customer is initiated
+INFO  01:12:54 Customer Created Successfully
+INFO  01:12:54 https://localhost:44377/api/AccountManagement/CreateAccount/
+INFO  01:12:54 StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 07:42:54 GMT
+}
+INFO  01:15:12 Creation of customer is initiated
+INFO  01:15:14 Customer Created Successfully
+INFO  01:15:14 https://localhost:44377/api/AccountManagement/CreateAccount/
+INFO  01:15:14 StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 07:45:14 GMT
+}
+INFO  01:15:56 Creation of customer is initiated
+INFO  01:15:57 Customer Created Successfully
+INFO  01:15:57 https://localhost:44377/api/AccountManagement/CreateAccount
+INFO  01:15:58 StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 07:45:58 GMT
+}
+INFO  01:16:59 Creation of customer is initiated
+INFO  01:17:01 Customer Created Successfully
+INFO  01:17:01 https://localhost:44377/api/AccountManagement/CreateAccount
+INFO  01:17:01 StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 07:47:01 GMT
+}
+INFO  01:18:23 Creation of customer is initiated
+INFO  01:18:25 Customer Created Successfully
+INFO  01:18:25 https://localhost:44377/api/AccountManagement/CreateAccount
+INFO  01:18:28 StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 07:48:28 GMT
+  Content-Type: application/json; charset=utf-8
+}
+INFO  01:38:33 Creation of customer is initiated
+INFO  01:38:35 Customer Created Successfully
+INFO  01:38:35 https://localhost:44377/api/AccountManagement/CreateAccount/18
+INFO  01:38:35 StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Server: Microsoft-IIS/10.0
+  X-Powered-By: ASP.NET
+  Date: Fri, 11 Jun 2021 08:08:35 GMT
+  Content-Type: application/json; charset=utf-8
+}
+INFO  01:41:49 Creation of customer is initiated
+INFO  01:41:50 Customer Created Successfully
+INFO  01:41:50 https://localhost:44377/api/AccountManagement/CreateAccount/19
+INFO  01:41:51 System.Net.Http.HttpConnectionResponseContent
+INFO  02:00:55 Creation of customer is initiated
+INFO  02:00:57 Customer Created Successfully
+INFO  02:00:57 https://localhost:44377/api/AccountManagement/CreateAccount/20
+INFO  02:00:58 System.Net.Http.HttpConnectionResponseContent
+INFO  02:02:00 Creation of customer is initiated
+INFO  02:02:01 Customer Created Successfully
+INFO  02:02:01 https://localhost:44377/api/AccountManagement/CreateAccount/21
+INFO  02:02:01 System.Net.Http.HttpConnectionResponseContent
+INFO  02:06:03 Creation of customer is initiated
+INFO  02:06:04 Customer Created Successfully
+INFO  02:06:04 https://localhost:44377/api/AccountManagement/CreateAccount/22
+INFO  02:06:05 System.Net.Http.HttpConnectionResponseContent
+INFO  02:18:16 Creation of customer is initiated
+INFO  02:18:19 Customer Created Successfully
+INFO  02:18:19 https://localhost:44377/api/AccountManagement/CreateAccount/
+INFO  02:18:22 System.Net.Http.HttpConnectionResponseContent
+INFO  03:43:04 Creation of customer is initiated
+INFO  03:43:06 Customer Created Successfully
+INFO  03:43:06 https://localhost:44377/api/AccountManagement/CreateAccount/
+INFO  03:43:09 System.Net.Http.HttpConnectionResponseContent
+INFO  09:05:34 Creation of customer is initiated
+INFO  09:05:37 Customer Created Successfully
+INFO  09:05:37 https://localhost:44377/api/AccountManagement/CreateAccount/
+INFO  09:05:42 System.Net.Http.HttpConnectionResponseContent
+INFO  09:05:42 Account Created Successfully
+INFO  09:05:42 http://localhost:56868/api/Authentication/Register
+INFO  09:15:08 Creation of customer is initiated
+INFO  09:15:10 Customer Created Successfully
+INFO  09:15:11 https://localhost:44377/api/AccountManagement/CreateAccount/
+INFO  09:15:14 System.Net.Http.HttpConnectionResponseContent
+INFO  09:15:14 Account Created Successfully
+INFO  09:15:14 http://localhost:56868/api/Authentication/Register

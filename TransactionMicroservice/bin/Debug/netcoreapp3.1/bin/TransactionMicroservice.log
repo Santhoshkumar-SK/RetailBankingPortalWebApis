@@ -1,0 +1,752 @@
+INFO  07:25:15 Application started. Press Ctrl+C to shut down.
+INFO  07:25:15 Hosting environment: Development
+INFO  07:25:15 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  07:25:36 Application started. Press Ctrl+C to shut down.
+INFO  07:25:36 Hosting environment: Development
+INFO  07:25:36 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:51:42 Application started. Press Ctrl+C to shut down.
+INFO  08:51:43 Hosting environment: Development
+INFO  08:51:43 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:53:30 Application started. Press Ctrl+C to shut down.
+INFO  08:53:30 Hosting environment: Development
+INFO  08:53:30 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:53:58 Invalid URI: The format of the URI could not be determined.
+ERROR 08:53:58 Invalid URI: The format of the URI could not be determined.
+ERROR 08:53:59 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at TransactionMicroservice.Services.TransactionsService.depositResponse(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 52
+   at TransactionMicroservice.Services.TransactionsService.depositAsync(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 30
+   at TransactionMicroservice.Repository.TransactionsRepo.deposit(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 29
+   at TransactionMicroservice.Controllers.TransactionController.deposit(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 37
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  09:29:10 Application started. Press Ctrl+C to shut down.
+INFO  09:29:10 Hosting environment: Development
+INFO  09:29:10 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:32:19 Application started. Press Ctrl+C to shut down.
+INFO  09:32:19 Hosting environment: Development
+INFO  09:32:19 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:33:38 Invalid URI: The format of the URI could not be determined.
+ERROR 09:33:39 Invalid URI: The format of the URI could not be determined.
+ERROR 09:33:39 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at TransactionMicroservice.Services.TransactionsService.depositResponse(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 52
+   at TransactionMicroservice.Services.TransactionsService.depositAsync(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 30
+   at TransactionMicroservice.Repository.TransactionsRepo.deposit(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 29
+   at TransactionMicroservice.Controllers.TransactionController.deposit(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 37
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  09:34:33 Application started. Press Ctrl+C to shut down.
+INFO  09:34:33 Hosting environment: Development
+INFO  09:34:33 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:35:32 Invalid URI: The format of the URI could not be determined.
+ERROR 09:35:38 Invalid URI: The format of the URI could not be determined.
+ERROR 09:35:38 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at TransactionMicroservice.Services.TransactionsService.depositResponse(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 52
+   at TransactionMicroservice.Services.TransactionsService.depositAsync(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 30
+   at TransactionMicroservice.Repository.TransactionsRepo.deposit(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 29
+   at TransactionMicroservice.Controllers.TransactionController.deposit(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 37
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  09:39:42 Application started. Press Ctrl+C to shut down.
+INFO  09:39:42 Hosting environment: Development
+INFO  09:39:42 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:39:57 Invalid URI: The format of the URI could not be determined.
+ERROR 09:39:57 Invalid URI: The format of the URI could not be determined.
+ERROR 09:39:57 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at TransactionMicroservice.Services.TransactionsService.depositResponse(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 52
+   at TransactionMicroservice.Services.TransactionsService.depositAsync(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 30
+   at TransactionMicroservice.Repository.TransactionsRepo.deposit(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 29
+   at TransactionMicroservice.Controllers.TransactionController.deposit(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 37
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  09:40:59 Application started. Press Ctrl+C to shut down.
+INFO  09:40:59 Hosting environment: Development
+INFO  09:40:59 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:41:11 Invalid URI: The format of the URI could not be determined.
+ERROR 09:41:11 Invalid URI: The format of the URI could not be determined.
+ERROR 09:41:11 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at TransactionMicroservice.Services.TransactionsService.depositResponse(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 52
+   at TransactionMicroservice.Services.TransactionsService.depositAsync(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 30
+   at TransactionMicroservice.Repository.TransactionsRepo.deposit(TransactionDTO deposit) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 29
+   at TransactionMicroservice.Controllers.TransactionController.deposit(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 37
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  09:43:32 Application started. Press Ctrl+C to shut down.
+INFO  09:43:32 Hosting environment: Development
+INFO  09:43:32 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:43:45 http://localhost:51355/api/AccountManagement/deposit
+INFO  09:43:48 Deposit Successfull
+INFO  08:18:48 Application started. Press Ctrl+C to shut down.
+INFO  08:18:48 Hosting environment: Development
+INFO  08:18:48 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:20:23 Get account response created
+INFO  08:23:37 Application started. Press Ctrl+C to shut down.
+INFO  08:23:37 Hosting environment: Development
+INFO  08:23:37 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:24:03 Get account response created
+INFO  08:24:40 Application started. Press Ctrl+C to shut down.
+INFO  08:24:40 Hosting environment: Development
+INFO  08:24:40 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:25:02 Get account response created
+INFO  08:26:04 Application started. Press Ctrl+C to shut down.
+INFO  08:26:04 Hosting environment: Development
+INFO  08:26:04 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:26:48 Get account response created
+INFO  08:28:45 Application started. Press Ctrl+C to shut down.
+INFO  08:28:45 Hosting environment: Development
+INFO  08:28:45 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:29:26 Get account response created
+INFO  08:42:56 Application started. Press Ctrl+C to shut down.
+INFO  08:42:56 Hosting environment: Development
+INFO  08:42:56 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 08:43:17 An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+INFO  08:43:26 An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+ERROR 08:43:37 An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+ERROR 08:43:38 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalanceResponse(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 130
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalance(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 101
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 50
+   at TransactionMicroservice.Controllers.TransactionController.WithDraw(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 71
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  08:46:18 Application started. Press Ctrl+C to shut down.
+INFO  08:46:18 Hosting environment: Development
+INFO  08:46:18 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 08:46:37 Invalid URI: The URI scheme is not valid.
+INFO  08:46:41 Invalid URI: The URI scheme is not valid.
+ERROR 08:46:45 Invalid URI: The URI scheme is not valid.
+ERROR 08:46:45 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The URI scheme is not valid.
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalanceResponse(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 131
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalance(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 101
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 50
+   at TransactionMicroservice.Controllers.TransactionController.WithDraw(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 71
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  08:47:18 Application started. Press Ctrl+C to shut down.
+INFO  08:47:18 Hosting environment: Development
+INFO  08:47:18 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:47:27 Application started. Press Ctrl+C to shut down.
+INFO  08:47:27 Hosting environment: Development
+INFO  08:47:27 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 08:47:44 Invalid URI: The URI scheme is not valid.
+INFO  08:47:45 Invalid URI: The URI scheme is not valid.
+ERROR 08:47:48 Invalid URI: The URI scheme is not valid.
+ERROR 08:47:49 An unhandled exception has occurred while executing the request.
+System.UriFormatException: Invalid URI: The URI scheme is not valid.
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalanceResponse(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 132
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalance(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 101
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 50
+   at TransactionMicroservice.Controllers.TransactionController.WithDraw(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 71
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  08:51:35 Application started. Press Ctrl+C to shut down.
+INFO  08:51:35 Hosting environment: Development
+INFO  08:51:35 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  08:52:18 Get account response created
+INFO  08:52:18 Getted Account
+INFO  08:52:23 Get rules response created
+INFO  08:52:23 Rules check build failed
+INFO  08:52:34 Transaction Declined
+ERROR 08:52:37 Transaction Declined
+ERROR 08:52:38 An unhandled exception has occurred while executing the request.
+System.MethodAccessException: Transaction Declined
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 69
+   at TransactionMicroservice.Controllers.TransactionController.WithDraw(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 71
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  09:01:33 Application started. Press Ctrl+C to shut down.
+INFO  09:01:33 Hosting environment: Development
+INFO  09:01:33 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:01:54 Get account response created
+INFO  09:01:54 Getted Account
+INFO  09:02:01 Get rules response created
+INFO  09:02:01 Successfully runned the rules check
+INFO  09:02:08 http://localhost:51355/api/AccountManagement/deposit
+INFO  09:02:09 WithDrawn Successfull
+INFO  09:03:34 Application started. Press Ctrl+C to shut down.
+INFO  09:03:34 Hosting environment: Development
+INFO  09:03:34 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:03:54 Get account response created
+INFO  09:03:54 Getted Account
+INFO  09:03:57 Get rules response created
+INFO  09:03:57 Successfully runned the rules check
+INFO  09:04:01 http://localhost:51355/api/AccountManagement/withdraw
+INFO  09:04:01 WithDrawn Successfull
+INFO  09:39:31 Application started. Press Ctrl+C to shut down.
+INFO  09:39:31 Hosting environment: Development
+INFO  09:39:31 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:40:13 Get account response created
+INFO  09:40:13 Getted Account
+INFO  09:40:17 Get rules response created
+INFO  09:40:17 Successfully runned the rules check
+INFO  09:40:24 Transaction Declined
+ERROR 09:40:28 Transaction Declined
+ERROR 09:40:28 An unhandled exception has occurred while executing the request.
+System.MethodAccessException: Transaction Declined
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 69
+   at TransactionMicroservice.Controllers.TransactionController.WithDraw(TransactionDTO transaction) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionController.cs:line 71
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:19:50 Application started. Press Ctrl+C to shut down.
+INFO  10:19:50 Hosting environment: Development
+INFO  10:19:50 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 10:20:17 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  10:20:21 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ERROR 10:20:25 System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalanceResponse(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 128
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalance(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 101
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 50
+   at TransactionMicroservice.Controllers.TransactionsController.WithDraw(TransactionDTO withDraw) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 71
+ERROR 10:20:26 An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalanceResponse(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 128
+   at TransactionMicroservice.Services.TransactionsService.getAccountBalance(Int32 accountId) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Services\TransactionsService.cs:line 101
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 50
+   at TransactionMicroservice.Controllers.TransactionsController.WithDraw(TransactionDTO withDraw) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 71
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:28:33 Application started. Press Ctrl+C to shut down.
+INFO  10:28:33 Hosting environment: Development
+INFO  10:28:33 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  10:29:22 Get account response created
+INFO  10:29:22 Getted Account
+INFO  10:29:26 Get rules response created
+INFO  10:29:27 Successfully runned the rules check
+INFO  10:29:32 http://localhost:51355/api/AccountManagement/withdraw
+INFO  10:29:33 WithDrawn Successfull
+INFO  10:30:17 Get account response created
+INFO  10:30:17 Getted Account
+INFO  10:30:29 Application started. Press Ctrl+C to shut down.
+INFO  10:30:29 Hosting environment: Development
+INFO  10:30:29 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  10:30:51 Get account response created
+INFO  10:30:51 Getted Account
+INFO  10:51:43 Application started. Press Ctrl+C to shut down.
+INFO  10:51:43 Hosting environment: Development
+INFO  10:51:43 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  11:52:51 Application started. Press Ctrl+C to shut down.
+INFO  11:52:51 Hosting environment: Development
+INFO  11:52:51 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  11:55:25 Get account response created
+INFO  11:55:25 Getted Account
+INFO  11:55:25 Get rules response created
+INFO  11:55:25 Successfully runned the rules check
+INFO  11:55:25 http://localhost:51355/api/AccountManagement/withdraw
+INFO  11:55:25 WithDrawn Successfull
+INFO  11:55:25 Withdraw from Source Account is successfully completed
+INFO  11:55:25 http://localhost:51355/api/AccountManagement/deposit
+INFO  11:55:25 Deposit Successfull
+INFO  11:55:52 Get account response created
+INFO  11:55:52 Getted Account
+INFO  11:55:52 Get rules response created
+INFO  11:55:52 Successfully runned the rules check
+INFO  11:55:52 Transaction Declined
+ERROR 11:55:52 Transaction Declined
+ERROR 11:55:52 TransactionMicroservice.Models.TransferException: Transaction Declined
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 70
+   at TransactionMicroservice.Repository.TransactionsRepo.transferAmount(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 97
+   at TransactionMicroservice.Controllers.TransactionsController.transfer(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 100
+INFO  11:56:11 Get account response created
+INFO  11:57:07 Get account response created
+INFO  11:57:07 Getted Account
+INFO  11:57:07 Get rules response created
+INFO  11:57:07 Successfully runned the rules check
+INFO  11:57:07 http://localhost:51355/api/AccountManagement/withdraw
+INFO  11:57:07 WithDrawn Successfull
+INFO  11:57:07 Withdraw from Source Account is successfully completed
+INFO  11:57:07 http://localhost:51355/api/AccountManagement/deposit
+INFO  12:30:45 Application started. Press Ctrl+C to shut down.
+INFO  12:30:45 Hosting environment: Development
+INFO  12:30:45 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:32:57 Get account response created
+INFO  12:32:57 Getted Account
+INFO  12:32:57 Get account response created
+INFO  12:32:57 Getted Account
+INFO  12:32:57 Get rules response created
+INFO  12:32:57 Successfully runned the rules check
+INFO  12:32:57 http://localhost:51355/api/AccountManagement/withdraw
+INFO  12:32:57 WithDrawn Successfull
+INFO  12:32:57 Withdraw from Source Account is successfully completed
+INFO  12:32:57 http://localhost:51355/api/AccountManagement/deposit
+INFO  12:32:58 Deposit Successfull
+INFO  12:33:19 Get account response created
+INFO  12:33:19 Getted Account
+INFO  12:33:19 Get account response created
+INFO  12:33:19 Get rules response created
+INFO  12:33:19 Successfully runned the rules check
+INFO  12:33:19 http://localhost:51355/api/AccountManagement/withdraw
+INFO  12:33:19 WithDrawn Successfull
+INFO  12:33:19 Withdraw from Source Account is successfully completed
+INFO  12:33:19 http://localhost:51355/api/AccountManagement/deposit
+INFO  12:35:05 Get account response created
+INFO  12:35:05 Getted Account
+INFO  12:35:06 Get account response created
+INFO  12:36:54 Application started. Press Ctrl+C to shut down.
+INFO  12:36:54 Hosting environment: Development
+INFO  12:36:54 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:37:44 Get account response created
+INFO  12:37:44 Getted Account
+INFO  12:37:45 Get account response created
+ERROR 12:37:54 Invalid Account
+ERROR 12:38:00 TransactionMicroservice.Exceptions.AccountNotFound: Invalid Account
+   at TransactionMicroservice.Repository.TransactionsRepo.transferAmount(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 117
+   at TransactionMicroservice.Controllers.TransactionsController.transfer(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 100
+INFO  12:39:12 Application started. Press Ctrl+C to shut down.
+INFO  12:39:12 Hosting environment: Development
+INFO  12:39:12 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:39:32 Get account response created
+INFO  12:39:33 Getted Account
+INFO  12:39:33 Get account response created
+ERROR 12:39:40 Invalid Account
+ERROR 12:39:43 TransactionMicroservice.Exceptions.AccountNotFound: Invalid Account
+   at TransactionMicroservice.Repository.TransactionsRepo.transferAmount(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 117
+   at TransactionMicroservice.Controllers.TransactionsController.transfer(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 101
+INFO  12:41:05 Application started. Press Ctrl+C to shut down.
+INFO  12:41:05 Hosting environment: Development
+INFO  12:41:05 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:41:54 Get account response created
+INFO  12:41:54 Getted Account
+INFO  12:41:54 Get account response created
+INFO  12:41:54 Getted Account
+INFO  12:42:29 Application started. Press Ctrl+C to shut down.
+INFO  12:42:29 Hosting environment: Development
+INFO  12:42:29 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:43:27 Get account response created
+INFO  12:43:27 Getted Account
+INFO  12:44:18 Application started. Press Ctrl+C to shut down.
+INFO  12:44:18 Hosting environment: Development
+INFO  12:44:18 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:44:57 Get account response created
+INFO  12:44:58 Getted Account
+INFO  12:46:28 Application started. Press Ctrl+C to shut down.
+INFO  12:46:28 Hosting environment: Development
+INFO  12:46:28 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  12:46:52 Get account response created
+INFO  12:46:52 Getted Account1004
+INFO  12:47:18 Get account response created
+INFO  12:47:18 Getted Account1003
+INFO  12:47:46 Get rules response created
+INFO  12:47:46 Successfully runned the rules check
+INFO  12:47:46 Transaction Declined
+ERROR 12:47:49 Transaction Declined
+ERROR 12:47:53 TransactionMicroservice.Exceptions.TransferException: Transaction Declined
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 71
+   at TransactionMicroservice.Repository.TransactionsRepo.transferAmount(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 98
+   at TransactionMicroservice.Controllers.TransactionsController.transfer(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 101
+INFO  12:48:27 Get account response created
+INFO  12:48:27 Getted Account1003
+INFO  12:48:35 Get account response created
+INFO  12:48:35 Getted Account1006
+INFO  12:49:07 Get rules response created
+INFO  12:49:07 Successfully runned the rules check
+INFO  12:49:07 http://localhost:51355/api/AccountManagement/withdraw
+INFO  12:49:07 WithDrawn Successfull
+INFO  12:49:25 Withdraw from Source Account is successfully completed
+INFO  12:49:27 http://localhost:51355/api/AccountManagement/deposit
+INFO  12:49:27 Deposit Successfull
+INFO  01:54:34 Application started. Press Ctrl+C to shut down.
+INFO  01:54:34 Hosting environment: Development
+INFO  01:54:34 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  01:56:53 Get account response created
+INFO  01:56:53 Getted Account1003
+INFO  01:56:53 Get account response created
+INFO  01:56:53 Getted Account1006
+INFO  01:56:54 Get rules response created
+INFO  01:56:54 Successfully runned the rules check
+INFO  01:56:54 http://localhost:51355/api/AccountManagement/withdraw
+INFO  01:56:54 WithDrawn Successfull
+INFO  01:56:54 Withdraw from Source Account is successfully completed
+INFO  01:56:54 http://localhost:51355/api/AccountManagement/deposit
+INFO  01:56:54 Deposit Successfull
+INFO  01:56:54 Get all account response created
+INFO  01:56:54 Getted All Account
+INFO  03:22:55 Application started. Press Ctrl+C to shut down.
+INFO  03:22:55 Hosting environment: Development
+INFO  03:22:55 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  04:45:36 Application started. Press Ctrl+C to shut down.
+INFO  04:45:36 Hosting environment: Development
+INFO  04:45:36 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  04:48:25 Get account response created
+INFO  04:48:25 Getted Account1003
+INFO  04:48:25 Get account response created
+INFO  04:48:25 Getted Account1006
+INFO  04:48:25 Get rules response created
+INFO  04:48:25 Successfully runned the rules check
+INFO  04:48:25 http://localhost:51355/api/AccountManagement/withdraw
+INFO  04:48:25 Generating Token Started..
+INFO  04:52:58 Application started. Press Ctrl+C to shut down.
+INFO  04:52:58 Hosting environment: Development
+INFO  04:52:58 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  04:53:22 Get account response created
+INFO  04:53:22 Getted Account1003
+INFO  04:53:22 Get account response created
+INFO  04:53:22 Getted Account1006
+INFO  04:53:22 Get rules response created
+INFO  04:53:22 Successfully runned the rules check
+INFO  04:53:22 http://localhost:51355/api/AccountManagement/withdraw
+INFO  04:53:22 Generating Token Started..
+INFO  04:53:22 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMDAzIiwibmJmIjoxNjIzNjY5ODAyLCJleHAiOjE2MjM3NTYyMDIsImlhdCI6MTYyMzY2OTgwMn0.Zi_8FMXb8dePk61ayDY8dlNC5CpJHqS6pgGxEkLp-78
+INFO  04:58:58 Application started. Press Ctrl+C to shut down.
+INFO  04:58:58 Hosting environment: Development
+INFO  04:58:58 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  05:48:17 Application started. Press Ctrl+C to shut down.
+INFO  05:48:17 Hosting environment: Development
+INFO  05:48:17 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  05:48:49 Get account response created
+INFO  05:48:49 Getted Account1003
+INFO  05:48:49 Get account response created
+INFO  05:48:49 Getted Account1006
+INFO  05:48:49 Get rules response created
+INFO  05:48:49 Successfully runned the rules check
+INFO  05:48:49 http://localhost:51355/api/AccountManagement/withdraw
+INFO  05:48:49 Generating Token Started..
+INFO  05:52:33 Application started. Press Ctrl+C to shut down.
+INFO  05:52:33 Hosting environment: Development
+INFO  05:52:33 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  05:52:48 Get account response created
+INFO  05:52:48 Getted Account1003
+INFO  05:52:48 Get account response created
+INFO  05:52:48 Getted Account1006
+INFO  05:52:48 Get rules response created
+INFO  05:52:48 Successfully runned the rules check
+INFO  05:52:48 http://localhost:51355/api/AccountManagement/withdraw
+INFO  05:52:48 Generating Token Started..
+INFO  05:52:49 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjM2NzUxNjgsImlzcyI6IjAxMjAyMTA2MjAyMSIsImF1ZCI6IjAxMjAyMTA2MjAyMSJ9.30z00SOt1otRC6uKn6rlL0ayzlNJhHT0I1X2QIvfyzw
+INFO  05:57:38 Application started. Press Ctrl+C to shut down.
+INFO  05:57:38 Hosting environment: Development
+INFO  05:57:38 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  05:58:00 Get account response created
+INFO  05:58:00 Getted Account1003
+INFO  05:58:01 Get account response created
+INFO  05:58:01 Getted Account1006
+INFO  05:58:01 Get rules response created
+INFO  05:58:01 Successfully runned the rules check
+INFO  05:58:01 http://localhost:51355/api/AccountManagement/withdraw
+INFO  05:58:01 Generating Token Started..
+INFO  05:58:01 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjM2NzU0ODEsImlzcyI6IjAxMjAyMTA2MjAyMSIsImF1ZCI6IjAxMjAyMTA2MjAyMSJ9.UVlFMPRIOdFHN2GZIzeB1rs3oLVzWNYjT02PSXGr7tc
+INFO  06:09:50 Application started. Press Ctrl+C to shut down.
+INFO  06:09:50 Hosting environment: Development
+INFO  06:09:50 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  06:10:18 Get account response created
+INFO  06:10:18 Getted Account1003
+INFO  06:10:18 Get account response created
+INFO  06:10:18 Getted Account1006
+INFO  06:10:18 Get rules response created
+INFO  06:10:18 Successfully runned the rules check
+INFO  06:10:18 Transaction Declined
+ERROR 06:10:18 Transaction Declined
+ERROR 06:10:18 TransactionMicroservice.Exceptions.TransferException: Transaction Declined
+   at TransactionMicroservice.Repository.TransactionsRepo.withDraw(TransactionDTO amount) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 75
+   at TransactionMicroservice.Repository.TransactionsRepo.transferAmount(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Repository\TransactionsRepo.cs:line 102
+   at TransactionMicroservice.Controllers.TransactionsController.transfer(TransferDTO transfer) in F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice\Controllers\TransactionsController.cs:line 101
+INFO  06:10:31 Get account response created
+INFO  06:10:31 Getted Account1003
+INFO  06:10:31 Get account response created
+INFO  06:10:31 Getted Account1006
+INFO  06:10:31 Get rules response created
+INFO  06:10:31 Successfully runned the rules check
+INFO  06:10:31 http://localhost:51355/api/AccountManagement/withdraw
+INFO  06:10:31 Generating Token Started..
+INFO  06:10:32 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjM2NzYyMzEsImlzcyI6IjAxMjAyMTA2MjAyMSIsImF1ZCI6IjAxMjAyMTA2MjAyMSJ9.2YZ5unSuoJOw7ByXK5sAjHchAmkt8Qz3_TZfdMu2qwE
+INFO  06:10:32 WithDrawn Successfull
+INFO  06:10:32 Withdraw from Source Account is successfully completed
+INFO  06:10:32 http://localhost:51355/api/AccountManagement/deposit
+INFO  06:10:32 Generating Token Started..
+INFO  06:10:32 Deposit Successfull
+INFO  06:10:32 Get all account response created
+INFO  06:10:32 Getted All Account
+INFO  09:14:25 Application started. Press Ctrl+C to shut down.
+INFO  09:14:25 Hosting environment: Development
+INFO  09:14:25 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:19:04 Application started. Press Ctrl+C to shut down.
+INFO  09:19:04 Hosting environment: Development
+INFO  09:19:04 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:50:26 Application started. Press Ctrl+C to shut down.
+INFO  09:50:26 Hosting environment: Development
+INFO  09:50:26 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  09:56:42 Application started. Press Ctrl+C to shut down.
+INFO  09:56:42 Hosting environment: Development
+INFO  09:56:42 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  10:00:55 Application started. Press Ctrl+C to shut down.
+INFO  10:00:55 Hosting environment: Development
+INFO  10:00:55 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  10:05:17 Get account response created
+INFO  10:05:17 Getted Account1003
+INFO  10:05:17 Get account response created
+INFO  10:05:17 Getted Account1019
+INFO  10:05:17 Get rules response created
+INFO  10:05:17 Successfully runned the rules check
+INFO  10:05:17 http://localhost:51355/api/AccountManagement/withdraw
+INFO  10:05:17 Generating Token Started..
+INFO  10:05:18 WithDrawn Successfull
+INFO  10:05:18 Withdraw from Source Account is successfully completed
+INFO  10:05:18 http://localhost:51355/api/AccountManagement/deposit
+INFO  10:05:18 Generating Token Started..
+INFO  10:05:18 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MjM2ODg1MTgsImV4cCI6MTYyMzc3NDkxOCwiaWF0IjoxNjIzNjg4NTE4fQ.RNkSDQz3L_mBtxRyBUBepCEsIHlI9DnFE-IEOgJt9EA
+INFO  10:05:18 Deposit Successfull
+INFO  10:05:19 Get all account response created
+INFO  10:05:19 Getted All Account
+INFO  10:09:42 Application started. Press Ctrl+C to shut down.
+INFO  10:09:42 Hosting environment: Development
+INFO  10:09:42 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 10:11:10 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Customer' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:16:59 Application started. Press Ctrl+C to shut down.
+INFO  10:16:59 Hosting environment: Development
+INFO  10:16:59 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 10:17:50 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Customer' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 10:27:48 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Customer' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:29:42 Application started. Press Ctrl+C to shut down.
+INFO  10:29:42 Hosting environment: Development
+INFO  10:29:42 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+ERROR 10:30:39 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Customer' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 10:31:39 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'Customer' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:32:17 Application started. Press Ctrl+C to shut down.
+INFO  10:32:17 Hosting environment: Development
+INFO  10:32:17 Content root path: F:\cts\Hands on\Dot Net\Final Project\TransactionMicroservice
+INFO  10:32:49 Get account response created
+INFO  10:32:49 Getted Account1003
+INFO  10:32:49 Get account response created
+INFO  10:32:49 Getted Account1019
+INFO  10:32:49 Get rules response created
+INFO  10:32:49 Successfully runned the rules check
+INFO  10:32:50 http://localhost:51355/api/AccountManagement/withdraw
+INFO  10:32:50 Generating Token Started..
+INFO  10:32:51 WithDrawn Successfull
+INFO  10:32:51 Withdraw from Source Account is successfully completed
+INFO  10:32:51 http://localhost:51355/api/AccountManagement/deposit
+INFO  10:32:51 Generating Token Started..
+INFO  10:32:51 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2MjM2OTAxNzEsImV4cCI6MTYyMzc3NjU3MSwiaWF0IjoxNjIzNjkwMTcxfQ.Od8AarqvlK9f4fxD3ywWP4Hq-MfoZQmvwsAO9qbg3mQ
+INFO  10:32:51 Deposit Successfull
+INFO  10:32:51 Get all account response created
+INFO  10:32:51 Getted All Account

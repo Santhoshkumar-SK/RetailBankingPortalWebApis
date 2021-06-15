@@ -1,0 +1,87 @@
+INFO  03:44:01 Scheduler started
+INFO  03:44:01 Singleton service Started
+INFO  03:44:02 Get All accounts response created
+INFO  03:44:02 Getted All Accounts
+INFO  03:44:02 1003
+INFO  03:44:02 1004
+INFO  03:44:02 1005
+INFO  03:44:02 1006
+INFO  03:44:02 1007
+INFO  03:44:02 1009
+INFO  03:44:02 1017
+INFO  03:44:02 09:15:57.5283641
+INFO  04:20:32 Scheduler Intiated
+INFO  04:20:32 Singleton service Started
+INFO  04:20:32 08:39:27.6391301
+INFO  05:11:09 Scheduler Intiated
+INFO  05:11:09 Singleton service Started
+ERROR 05:11:14 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:12:07 Scheduler Intiated
+INFO  05:12:07 Singleton service Started
+INFO  05:12:13 Get All accounts response created
+INFO  05:12:13 Getted All Accounts
+INFO  05:12:13 http://localhost:51355/api/AccountManagement/withdraw/
+INFO  05:12:14 Apply Service Charge response created
+INFO  05:12:14 Service Charge detected Successfully
+INFO  05:12:14 Service charge deducted for the AccountID = 1004
+INFO  05:12:14 http://localhost:51355/api/AccountManagement/withdraw/
+INFO  05:12:15 Apply Service Charge response created
+INFO  05:12:15 Service Charge detected Successfully
+INFO  05:12:15 Service charge deducted for the AccountID = 1005
+INFO  05:12:15 http://localhost:51355/api/AccountManagement/withdraw/
+INFO  05:12:15 Apply Service Charge response created
+INFO  05:12:15 Service Charge detected Successfully
+INFO  05:12:15 Service charge deducted for the AccountID = 1006
+INFO  05:12:15 http://localhost:51355/api/AccountManagement/withdraw/
+INFO  05:12:15 Apply Service Charge response created
+INFO  05:12:15 Service Charge detected Successfully
+INFO  05:12:15 Service charge deducted for the AccountID = 1007
+INFO  05:12:15 http://localhost:51355/api/AccountManagement/withdraw/
+INFO  05:12:15 Apply Service Charge response created
+INFO  05:12:15 Service Charge detected Successfully
+INFO  05:12:15 Service charge deducted for the AccountID = 1009
+INFO  05:12:15 http://localhost:51355/api/AccountManagement/withdraw/
+INFO  05:12:15 Apply Service Charge response created
+INFO  05:12:15 Service Charge detected Successfully
+INFO  05:12:15 Service charge deducted for the AccountID = 1017
+INFO  05:12:15 07:47:44.7981331
+INFO  05:21:32 Scheduler Intiated
+INFO  05:21:32 Singleton service Started
+INFO  05:21:32 07:38:27.6742337
+INFO  05:21:46 Evaluating Minimum Balance
+INFO  09:30:39 Scheduler Intiated
+INFO  09:30:39 Singleton service Started
+INFO  07:56:11 Scheduler Intiated
+INFO  07:56:11 Singleton service Started
+INFO  08:49:46 Evaluating Minimum Balance
+INFO  09:02:01 Evaluating Minimum Balance
+INFO  09:03:57 Evaluating Minimum Balance
+INFO  09:40:17 Evaluating Minimum Balance
+INFO  10:22:44 Scheduler Intiated
+INFO  10:22:44 Singleton service Started
+INFO  10:27:21 Scheduler Intiated
+INFO  10:27:21 Singleton service Started
+INFO  10:29:26 Evaluating Minimum Balance
+INFO  11:55:25 Evaluating Minimum Balance
+INFO  11:55:52 Evaluating Minimum Balance
+INFO  11:57:07 Evaluating Minimum Balance
+INFO  12:32:57 Evaluating Minimum Balance
+INFO  12:33:19 Evaluating Minimum Balance
+INFO  12:47:46 Evaluating Minimum Balance
+INFO  12:49:07 Evaluating Minimum Balance
+INFO  01:56:54 Evaluating Minimum Balance
+INFO  04:46:03 Scheduler Intiated
+INFO  04:46:03 Singleton service Started
+INFO  04:48:25 Evaluating Minimum Balance
+INFO  04:53:22 Evaluating Minimum Balance
+INFO  05:48:49 Evaluating Minimum Balance
+INFO  05:52:48 Evaluating Minimum Balance
+INFO  05:58:01 Evaluating Minimum Balance
+INFO  06:10:18 Evaluating Minimum Balance
+INFO  06:10:31 Evaluating Minimum Balance
+INFO  09:14:01 Scheduler Intiated
+INFO  09:14:01 Singleton service Started
+INFO  10:05:17 Evaluating Minimum Balance
+INFO  10:10:37 Scheduler Intiated
+INFO  10:10:37 Singleton service Started
+INFO  10:32:49 Evaluating Minimum Balance
