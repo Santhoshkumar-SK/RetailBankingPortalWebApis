@@ -121,7 +121,7 @@ namespace TransactionMicroservice.Controllers
         }
 
         //Post : api/Transactions/getTransactions
-        [HttpPost]
+        [HttpGet]
         [Route("getTransactions")]
         public async Task<ActionResult<List<TransactionHistory>>> transactionHistory([FromQuery] int customerId)
         {

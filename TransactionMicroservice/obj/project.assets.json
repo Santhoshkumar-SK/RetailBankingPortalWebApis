@@ -7831,11 +7831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\cts\\Hands on\\Dot Net\\Final Project\\TransactionMicroservice\\TransactionMicroservice.csproj",
+      "projectUniqueName": "F:\\cts\\Hands on\\Dot Net\\BankPortalBackup\\Apis with test\\RetailBankingPortalWebApis\\TransactionMicroservice\\TransactionMicroservice.csproj",
       "projectName": "TransactionMicroservice",
-      "projectPath": "F:\\cts\\Hands on\\Dot Net\\Final Project\\TransactionMicroservice\\TransactionMicroservice.csproj",
+      "projectPath": "F:\\cts\\Hands on\\Dot Net\\BankPortalBackup\\Apis with test\\RetailBankingPortalWebApis\\TransactionMicroservice\\TransactionMicroservice.csproj",
       "packagesPath": "C:\\Users\\my pc\\.nuget\\packages\\",
-      "outputPath": "F:\\cts\\Hands on\\Dot Net\\Final Project\\TransactionMicroservice\\obj\\",
+      "outputPath": "F:\\cts\\Hands on\\Dot Net\\BankPortalBackup\\Apis with test\\RetailBankingPortalWebApis\\TransactionMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\my pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
