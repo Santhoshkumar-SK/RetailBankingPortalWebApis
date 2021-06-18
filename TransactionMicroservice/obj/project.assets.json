@@ -7826,19 +7826,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\my pc\\.nuget\\packages\\": {}
+    "C:\\Users\\Yasini\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\cts\\Hands on\\Dot Net\\BankPortalBackup\\Apis with test\\RetailBankingPortalWebApis\\TransactionMicroservice\\TransactionMicroservice.csproj",
+      "projectUniqueName": "C:\\Users\\Yasini\\Documents\\Project\\TransactionMicroservice\\TransactionMicroservice.csproj",
       "projectName": "TransactionMicroservice",
-      "projectPath": "F:\\cts\\Hands on\\Dot Net\\BankPortalBackup\\Apis with test\\RetailBankingPortalWebApis\\TransactionMicroservice\\TransactionMicroservice.csproj",
-      "packagesPath": "C:\\Users\\my pc\\.nuget\\packages\\",
-      "outputPath": "F:\\cts\\Hands on\\Dot Net\\BankPortalBackup\\Apis with test\\RetailBankingPortalWebApis\\TransactionMicroservice\\obj\\",
+      "projectPath": "C:\\Users\\Yasini\\Documents\\Project\\TransactionMicroservice\\TransactionMicroservice.csproj",
+      "packagesPath": "C:\\Users\\Yasini\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yasini\\Documents\\Project\\TransactionMicroservice\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\my pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yasini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7927,7 +7932,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
