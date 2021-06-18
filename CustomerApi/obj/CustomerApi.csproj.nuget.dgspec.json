@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\CustomerApi\\CustomerApi.csproj": {}
+    "C:\\Users\\Yasini\\Documents\\Project\\CustomerApi\\CustomerApi.csproj": {}
   },
   "projects": {
-    "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\CustomerApi\\CustomerApi.csproj": {
+    "C:\\Users\\Yasini\\Documents\\Project\\CustomerApi\\CustomerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\CustomerApi\\CustomerApi.csproj",
+        "projectUniqueName": "C:\\Users\\Yasini\\Documents\\Project\\CustomerApi\\CustomerApi.csproj",
         "projectName": "CustomerApi",
-        "projectPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\CustomerApi\\CustomerApi.csproj",
+        "projectPath": "C:\\Users\\Yasini\\Documents\\Project\\CustomerApi\\CustomerApi.csproj",
         "packagesPath": "C:\\Users\\Yasini\\.nuget\\packages\\",
-        "outputPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\CustomerApi\\obj\\",
+        "outputPath": "C:\\Users\\Yasini\\Documents\\Project\\CustomerApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
