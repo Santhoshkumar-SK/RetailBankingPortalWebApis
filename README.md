@@ -1,52 +1,37 @@
+Retail Banking System
 
 
- **OBJECTIVE**
+Introduction
+--------------
 
+Retail Banking System helps customer to register and create an account with the help of employee. Customer will perform withdrawal, deposit and transfer amount within the retail bank.
 
----
+Microservices
+---------------
 
-## **MICRO SERVICES FUNCTIONALITY**
+1.Authentication Microservice
 
-Customer Microservice:
-- Creates the customer Account with their Details post authentication of bank employee
-- Provide the Customer Information by taking customer id as Input.
+2.Customer Microservice
 
+3.Account Microservice
 
-Account Management Microservice:
-- Creates the bank account for the customer post creation of customer account
-- Returns all the accounts of the customer by passing customer ID
-- Returns the account details by providing account id
-- Gives the statements of transactions by passing account id
-- depositing the amount post authentication of transaction api
-- withdrawing the amount post authentication of transaction api
+4.Transaction Microservice
 
-Authentication Microservice :
--Return the token after authenticates
--Register customer method added for customer authentication
+5.Rules Microservice
 
+Description
+-------------
 
----
+1.Employee needs to login to the web portal using user Id and password and later get authenticated with the help of JWT tokens. Once the employee is authenticated JWt token is generated and the JWT token is validated every time using "/validateToken" in the Authorization microservice.
 
-## GitHub link:  ****************** link need to be provided *********************
+2.Employee will create the customer by passing the customer information using "/createCustomer" in customer microservice. Employee can also view the existing customer using "/viewCustomer".
 
----
+3. After successful creation of customer, the customer service will interact with account service to create the customer’s account using "/createAccount". The Customer can view their account details using "/getCustomerDetails".
 
-# EndPoints: 
+4.The Customer can initiate the transactions like deposit (using "/deposit"), withdraw (using "/withdraw") and transfer (using "/transfer") within the retail bank. Before performs withdraw and transfer transaction service interact with rules service for checking the minimum balance criteria using "/evaluateMinBal". If criteria are satisfied transaction will happen and transaction details is stored in transaction service database and updated account details is stored in account service database.
 
-1. Customer Microservice: 
-[Customer Microservice](https://localhost:44377/swagger/index.html)
+5.The Customer can view their transaction history by using "/getTransaction" in transaction service. 
 
-2. Account Management Microservice: 
-[Account Management Microservice](http://localhost:51355/swagger/index.html)
+6.Service Charges will detect from account if the customer doesn’t maintain the minimum balance criteria in rules service. 
 
-3.Authentication Microservice :
-[Authentication Microservice](http://localhost:56868/swagger/index.html)
----
-
-```
-NOTE: *********************************Note Need to be added **********************************
-```
-
-
-
-
+7. Once the admin decides to log out, he/she cannot view any other pages previously viewed in the logged out state. To do so, they need to login again.
