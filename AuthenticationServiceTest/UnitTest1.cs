@@ -124,6 +124,21 @@ namespace AuthenticationServiceTest
         }
 
         [Test]
+        public void IsTokenNotNull_When_AuthenticateUser_Valid_ReturnOk()
+        {
+            //Arrange
+            var Result = _config.Setup(s => s.authenticateUser(new UserDTO
+            {
+                UserId = 1,
+                Password = "Pas@123",
+                Role = "Employee"
+            }));
+
+            //Assert
+            Assert.IsNotNull(Result);
+        }
+
+        [Test]
         public void IsTokenNull_When_AuthenticateUser_InValid_ReturnOk()
         {
             //Arrange
@@ -154,7 +169,7 @@ namespace AuthenticationServiceTest
         }
 
         [Test]
-        public void IsTokenNotNull_When_addCustomer_InValid_ReturnOk()
+        public void IsTokenNull_When_addCustomer_InValid_ReturnOk()
         {
             //Arrange
             var Result = _config.Setup(s => s.addCustomer(new UserDTO
