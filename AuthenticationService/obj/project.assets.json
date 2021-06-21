@@ -7831,11 +7831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj",
+      "projectUniqueName": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj",
       "projectName": "AuthenticationService",
-      "projectPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj",
+      "projectPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj",
       "packagesPath": "C:\\Users\\Yasini\\.nuget\\packages\\",
-      "outputPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\obj\\",
+      "outputPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

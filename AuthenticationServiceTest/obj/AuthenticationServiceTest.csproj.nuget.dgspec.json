@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj": {}
+    "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj": {}
   },
   "projects": {
-    "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj": {
+    "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj",
+        "projectUniqueName": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj",
         "projectName": "AuthenticationServiceTest",
-        "projectPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj",
+        "projectPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationServiceTest\\AuthenticationServiceTest.csproj",
         "packagesPath": "C:\\Users\\Yasini\\.nuget\\packages\\",
-        "outputPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationServiceTest\\obj\\",
+        "outputPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationServiceTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj": {
-                "projectPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj"
+              "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj": {
+                "projectPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj": {
+    "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj",
+        "projectUniqueName": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj",
         "projectName": "AuthenticationService",
-        "projectPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\AuthenticationService.csproj",
+        "projectPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\AuthenticationService.csproj",
         "packagesPath": "C:\\Users\\Yasini\\.nuget\\packages\\",
-        "outputPath": "D:\\Mfpe_Project\\RetailBankingPortalWebApis\\AuthenticationService\\obj\\",
+        "outputPath": "C:\\Users\\Yasini\\Documents\\Project\\AuthenticationService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
