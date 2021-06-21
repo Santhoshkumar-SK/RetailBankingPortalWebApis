@@ -76,20 +76,27 @@ namespace AuthenticationServiceTest
         [Test]
         public void IsTokenNotNull_When_GenerateToken_Valid_ReturnsOk()
         {
+           //Arrange
            var Result = _config.Setup(s => s.generateJSONWebToken(It.IsAny<UserDTO>())).Returns("True");
+           
+            //Assert
            Assert.IsNotNull(Result);
         }
 
         [Test]
         public void IsTokenNull_When_GenerateToken_InValid_ReturnsOk()
         {
+            //Arrange
             var Result = _config.Setup(s => s.generateJSONWebToken(It.IsAny<UserDTO>())).Returns("False");
+            
+            //Assert
             Assert.IsNull(Result);
         }
 
         [Test]
         public void IsTokenNotNull_When_AuthenticateEmployee_Valid_ReturnOk()
         {
+            //Arrange
             var Result = _config.Setup(s => s.authenticateEmployee(new UserDTO
             {
                 UserId = 1,
@@ -97,12 +104,14 @@ namespace AuthenticationServiceTest
                 Role = "Employee"
             }));
 
+            //Assert
             Assert.IsNotNull(Result);
         }
         
         [Test]
         public void IsTokenNotNull_When_AuthenticateCustomer_Valid_ReturnOk()
         {
+            //Arrange
             var Result = _config.Setup(s => s.authenticateCustomer(new UserDTO
             {
                 UserId = 1,
@@ -110,12 +119,14 @@ namespace AuthenticationServiceTest
                 Role = "Customer"
             }));
 
+            //Assert
             Assert.IsNotNull(Result);
         }
 
         [Test]
         public void IsTokenNull_When_AuthenticateUser_InValid_ReturnOk()
         {
+            //Arrange
             var Result = _config.Setup(s => s.authenticateUser(new UserDTO
             {
                 UserId = 1,
@@ -123,12 +134,14 @@ namespace AuthenticationServiceTest
                 Role = "wronginput"
             }));
 
+            //Assert
             Assert.IsNull(Result);
         }
 
         [Test]
         public void IsTokenNotNull_When_addCustomer_Valid_ReturnOk()
         {
+            //Arrange
             var Result = _config.Setup(s => s.addCustomer(new UserDTO
             {
                 UserId = 1,
@@ -136,12 +149,14 @@ namespace AuthenticationServiceTest
                 Role = "Customer"
             }));
 
+            //Assert
             Assert.IsNotNull(Result);
         }
 
         [Test]
         public void IsTokenNotNull_When_addCustomer_InValid_ReturnOk()
         {
+            //Arrange
             var Result = _config.Setup(s => s.addCustomer(new UserDTO
             {
                 UserId = 1,
@@ -149,6 +164,7 @@ namespace AuthenticationServiceTest
                 Role = "wronginput"
             }));
 
+            //Assert
             Assert.IsNull(Result);
         }
 
